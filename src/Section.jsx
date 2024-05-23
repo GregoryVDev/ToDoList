@@ -2,8 +2,8 @@ import { Article } from "./Article";
 export const Section = () => {
   return (
     <div>
-      <section>
-        <article>
+      <section className="section1">
+        <article className="article1">
           <h1>Je suis un titre h1 dans un article qui est dans une section</h1>
           <h3>
             Alors que moi je suis un petit titre de type h3 qui est dans

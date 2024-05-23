@@ -1,14 +1,24 @@
+/* Component Section */
+
 section {
   background-color: rgb(162, 162, 226);
   padding: 20px;
   display: block;
 }
 
+.section1 {
+  background: rgb(165, 192, 157);
+}
+
+/* Component Article */
+
 article {
   background-color: aquamarine;
   margin-bottom: 20px;
   padding: 10px;
 }
+
+/* Component Titres */
 
 h1 {
   background-color: antiquewhite;
@@ -21,6 +31,8 @@ h3 {
   margin-bottom: 10px;
   padding: 5px;
 }
+
+/* Component Paragraphe */
 
 p {
   background-color: yellowgreen;
