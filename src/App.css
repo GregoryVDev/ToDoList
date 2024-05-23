@@ -12,6 +12,10 @@ section {
 
 /* Component Article */
 
+.article1 {
+  background: burlywood;
+}
+
 article {
   background-color: aquamarine;
   margin-bottom: 20px;
