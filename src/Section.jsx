@@ -16,9 +16,13 @@ export const Section = () => {
         </article>
       </section>
       <Article />
+      <section>
+        <Article />
+      </section>
       <Article />
-      <Article />
-      <Article />
+      <section>
+        <Article />
+      </section>
       <Article />
     </div>
   );
