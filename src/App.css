@@ -1,24 +1,29 @@
 section {
   background-color: rgb(162, 162, 226);
-  height: 100vh;
+  padding: 20px;
+  display: block;
 }
 
 article {
   background-color: aquamarine;
-  height: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
 }
 
 h1 {
   background-color: antiquewhite;
-  height: 25px;
+  margin-bottom: 10px;
+  padding: 5px;
 }
 
 h3 {
   background-color: salmon;
-  height: 20px;
+  margin-bottom: 10px;
+  padding: 5px;
 }
 
 p {
   background-color: yellowgreen;
-  height: 20px;
+  margin-bottom: 10px;
+  padding: 5px;
 }
