@@ -1,7 +1,7 @@
-import "./App.css";
-import { Section } from "./Section";
+// import "./App.css";
+// import { Section } from "./Section";
 
-function App() {
+function Test() {
   return (
     <div>
       <Section />
@@ -9,4 +9,12 @@ function App() {
   );
 }
 
-export default App;
+import { HelloWorld } from "./HelloWorld";
+
+export const App = () => {
+  return (
+    <div>
+      <HelloWorld />
+    </div>
+  );
+};
