@@ -1,7 +1,7 @@
-export const Paragraphe = () => {
+export const Paragraphe = ({ message }) => {
   return (
     <div>
-      <p>Je suis un paragraphe dans une function flêchée</p>
+      <p>{message}</p>
     </div>
   );
 };

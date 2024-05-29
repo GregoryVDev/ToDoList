@@ -1,7 +1,7 @@
-export const HelloWorld = () => {
+export const HelloWorld = ({ bienvenue }) => {
   return (
     <div>
-      <h1>HelloLol</h1>
+      <h1>{bienvenue}</h1>
     </div>
   );
 };
