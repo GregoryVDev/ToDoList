@@ -1,7 +1,7 @@
-export const Paragraphe = ({ message }) => {
+export const Paragraphe = ({ message, color }) => {
   return (
     <div>
-      <p>{message}</p>
+      <p style={{ color: color }}>{message}</p>
     </div>
   );
 };
