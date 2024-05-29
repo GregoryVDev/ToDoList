@@ -1,13 +1,13 @@
 // import "./App.css";
 // import { Section } from "./Section";
 
-function Test() {
-  return (
-    <div>
-      <Section />
-    </div>
-  );
-}
+// function App() {
+//   return (
+//     <div>
+//       <Section />
+//     </div>
+//   );
+// }
 
 import { HelloWorld } from "./HelloWorld";
 
