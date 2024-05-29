@@ -11,7 +11,7 @@
 
 import { HelloWorld } from "./HelloWorld";
 import { Paragraphe } from "./Paragraphe";
-import { ByeWorld } from "./ByeWorld";
+import { ByeWorld, Titreh3 } from "./ByeWorld";
 
 export const App = () => {
   return (
@@ -23,6 +23,7 @@ export const App = () => {
       <ByeWorld bye="Je te dis Bye bye" color="salmon" />
       <ByeWorld bye="Je te dis au revoir" color="pink" />
       <ByeWorld bye="Je te dis bisous" color="yellowgreen" />
+      <Titreh3 />
     </div>
   );
 };

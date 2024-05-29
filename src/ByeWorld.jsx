@@ -5,3 +5,11 @@ export const ByeWorld = ({ bye, color }) => {
     </div>
   );
 };
+
+export const Titreh3 = () => {
+  return (
+    <div>
+      <h3>Coucou</h3>
+    </div>
+  );
+};
