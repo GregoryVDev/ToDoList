@@ -12,7 +12,7 @@
 import { HelloWorld } from "./HelloWorld";
 import { Paragraphe } from "./Paragraphe";
 import { ByeWorld, Description, Titreh3 } from "./ByeWorld";
-import { ToggleButton } from "./ToggleButton";
+import { ToggleButton, Counter } from "./ToggleButton";
 
 export const App = () => {
   return (
@@ -34,6 +34,7 @@ export const App = () => {
       <Titreh3 />
       <Description descripte="Je décris ce que je fais, là j'ai fais plusieurs composants pour apprendre, puis on pratique, mieux on apprend" />
       <ToggleButton />
+      <Counter />
     </div>
   );
 };
