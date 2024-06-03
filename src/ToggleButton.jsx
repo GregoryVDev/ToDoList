@@ -64,9 +64,24 @@ export const TextValue = () => {
         value={textValue}
         onChange={(e) => setTextValue(e.target.value)}
       />
-      <button onClick={handleReset}>Reset</button>{" "}
+      <button onClick={handleReset}>Reset</button>
       {/* Permet de réinitialiser le champs de texte*/}
       <p>Vous avez tapé : {textValue}</p>
+    </div>
+  );
+};
+
+export const CountValue = () => {
+  const [count, setCount] = useState(0);
+  const handleReset = () => {
+    setCount(0);
+  };
+
+  return (
+    <div>
+      <button onClick={() => setCount(count + 1)}>Incrémenter</button>
+      <button onClick={handleReset}>Reset</button>
+      <p>{count}</p>
     </div>
   );
 };

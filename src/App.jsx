@@ -12,7 +12,13 @@
 import { HelloWorld } from "./HelloWorld";
 import { Paragraphe } from "./Paragraphe";
 import { ByeWorld, Description, Titreh3 } from "./ByeWorld";
-import { ToggleButton, Counter, TextInput, TextValue } from "./ToggleButton";
+import {
+  ToggleButton,
+  Counter,
+  TextInput,
+  TextValue,
+  CountValue,
+} from "./ToggleButton";
 
 export const App = () => {
   return (
@@ -37,6 +43,7 @@ export const App = () => {
       <Counter />
       <TextInput />
       <TextValue />
+      <CountValue />
     </div>
   );
 };
