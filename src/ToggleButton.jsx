@@ -50,3 +50,23 @@ export function TextInput() {
     </div>
   );
 }
+
+export const TextValue = () => {
+  const [textValue, setTextValue] = useState("");
+  const handleReset = () => {
+    setTextValue(""); // On créé un handleReset avec un setTextValue("") avec des chaines vides pour reset le champ de texte
+  };
+
+  return (
+    <div>
+      <input
+        type="text"
+        value={textValue}
+        onChange={(e) => setTextValue(e.target.value)}
+      />
+      <button onClick={handleReset}>Reset</button>{" "}
+      {/* Permet de réinitialiser le champs de texte*/}
+      <p>Vous avez tapé : {textValue}</p>
+    </div>
+  );
+};
