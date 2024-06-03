@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export function ToggleButton() {
   const [isOn, setIsOn] = useState(false);
@@ -56,6 +56,15 @@ export const TextValue = () => {
   const handleReset = () => {
     setTextValue(""); // On créé un handleReset avec un setTextValue("") avec des chaines vides pour reset le champ de texte
   };
+
+  // useEffect qui affiche une alert si textValue change
+  useEffect(() => {
+    // if textValue n'est pas vide
+    if (textValue !== "") {
+      // on lance l'alert
+      alert("Vous avez tapé quelque chose!");
+    }
+  }, [textValue]); // Le tableau de dépendances assure que useEffect surveille bien textValue et si ya un changement dessus, le useEffect s'active
 
   return (
     <div>
