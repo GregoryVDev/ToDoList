@@ -1,13 +1,17 @@
 // import "./App.css";
 // import { Section } from "./Section";
+import React from "react";
+import { ToggleButton } from "./ByeWorld";
 
-// function App() {
-//   return (
-//     <div>
-//       <Section />
-//     </div>
-//   );
-// }
+function App() {
+  return (
+    <div>
+      <ToggleButton />
+    </div>
+  );
+}
+
+export default App;
 
 import { HelloWorld } from "./HelloWorld";
 import { Paragraphe } from "./Paragraphe";

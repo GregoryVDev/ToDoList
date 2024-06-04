@@ -21,11 +21,3 @@ export const Titreh3 = () => {
     </div>
   );
 };
-
-export const Description = ({ descripte, weight = 300 }) => {
-  return (
-    <div>
-      <p style={{ weight }}>{descripte}</p>
-    </div>
-  );
-};
