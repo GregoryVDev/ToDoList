@@ -16,6 +16,14 @@ export default App;
 import { HelloWorld } from "./HelloWorld";
 import { Paragraphe } from "./Paragraphe";
 import { ByeWorld, Description, Titreh3 } from "./ByeWorld";
+import {
+  ToggleButton,
+  Counter,
+  TextInput,
+  TextValue,
+  CountValue,
+} from "./ToggleButton";
+import { TitleUpdater, DataFetcher, WindowWidth, Account } from "./Testeffect";
 
 export const App = () => {
   return (
@@ -36,6 +44,15 @@ export const App = () => {
       <ByeWorld bye="bye bye" />
       <Titreh3 />
       <Description descripte="Je décris ce que je fais, là j'ai fais plusieurs composants pour apprendre, puis on pratique, mieux on apprend" />
+      <ToggleButton />
+      <Counter />
+      <TextInput />
+      <TextValue />
+      <CountValue />
+      <TitleUpdater />
+      <DataFetcher />
+      <WindowWidth />
+      <Account />
     </div>
   );
 };
