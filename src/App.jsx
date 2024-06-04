@@ -19,7 +19,7 @@ import {
   TextValue,
   CountValue,
 } from "./ToggleButton";
-import { TitleUpdater, DataFetcher, WindowWidth } from "./Testeffect";
+import { TitleUpdater, DataFetcher, WindowWidth, Account } from "./Testeffect";
 
 export const App = () => {
   return (
@@ -48,6 +48,7 @@ export const App = () => {
       <TitleUpdater />
       <DataFetcher />
       <WindowWidth />
+      <Account />
     </div>
   );
 };

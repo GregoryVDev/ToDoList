@@ -66,3 +66,27 @@ export const WindowWidth = () => {
     </div>
   );
 };
+
+export const Account = () => {
+  const [duration, setDuration] = useState(5); // On créé une const duration qui stock "5" setDuration permet de mettre à jour ce qu'il y a dans duration
+  const [secondsLeft, setSecondsLeft] = useState(duration); // On créé une autre const appellée secondsLeft qui stock le useState (donc 5) et "setDuration" permet de mettre à jour ce qu'il y a dans secondsLeft
+
+  useEffect(() => {
+    setSecondsLeft(duration); // Permet de mettre à jour "setSecondsLeft" avec la valeur actuelle de "duration"
+    const timer = setInterval(() => {
+      setSecondsLeft((v) => v - 1); // On décrémente secondsLeft de 1
+    }, 1000); // On met à jours toutes les 1 secondes
+
+    // On retourne une fonction de nettoyage qui arrête le minuteur quand le composant est démonté ou "duration" a changé
+    return () => {
+      clearInterval(timer);
+    };
+  }, [duration]); // Le useEffect se déclenche uniquement quand "duration" change
+
+  return (
+    <div className="vstack gap-2">
+      <input value={duration} onChange={setDuration} placeholder="Timer..." />
+      <p>Décompte : {secondsLeft}</p>
+    </div>
+  );
+};
